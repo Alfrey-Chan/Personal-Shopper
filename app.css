@@ -1,0 +1,362 @@
+:root {
+	/* Color */
+	--color-primary: #0d0b0d;
+	--color-secondary: #ffffff;
+	--color-foreground: #ffffff;
+	--color-border: #0d0b0d;
+	--color-accent: #e60012;
+
+	/* Font */
+	--ff: "Urbanist", sans-serif;
+	--h1: bold 4rem/1em var(--ff);
+	--h2: bold 3rem/1.2em var(--ff);
+	--h3: 2.25rem/1.2em var(--ff);
+	--h4: bold 1.5rem/1.6em var(--ff);
+	--p: 1rem/1.6em var(--ff);
+	--subtext: 0.75rem/2em var(--ff);
+
+	/* Margin */
+	--margin-xxs: 0.25rem;
+	--margin-xs: 0.5rem;
+	--margin-s: 0.75rem;
+	--margin-m: 1rem;
+	--margin-l: 1.25rem;
+	--margin-xl: 1.75rem;
+	--margin-xxl: 2.5rem;
+	--margin-xxxl: 6.25rem;
+
+	/* Border */
+	--border-radius-s: 8px;
+	--border-radius-m: 16px;
+	--border-radius-l: 24px;
+
+	--border-thin: 1px solid var(--color-border);
+	--border-thick: 2px solid var(--color-border);
+
+	/* Padding */
+	--padding-xs: 0.25rem;
+	--padding-s: 0.5rem;
+	--padding-m: 1rem;
+	--padding-l: 1.5rem;
+	--padding-xl: 2rem;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	/* background-color: #fefcf9; */
+	/* background-image: url(file.svg); */
+}
+
+h1 {
+	font: var(--h1);
+}
+h2 {
+	font: var(--h2);
+}
+h3 {
+	font: var(--h3);
+}
+h4 {
+	font: var(--h4);
+}
+a {
+	font: var(--p);
+}
+p {
+	font: var(--p);
+}
+
+section {
+	overflow: hidden;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: var(--border-thick);
+	padding: var(--padding-s);
+}
+
+.left-nav a {
+	text-decoration: none;
+	color: var(--color-primary);
+	margin-right: var(--margin-m);
+}
+
+.right-nav a {
+	text-decoration: none;
+	margin-right: var(--margin-m);
+	padding: var(--padding-xs) var(--padding-m);
+}
+
+.login {
+	color: var(--color-primary);
+	border: var(--border-thin);
+	border-radius: var(--border-radius-l);
+}
+
+.cart {
+	background-color: var(--color-accent);
+	color: var(--color-secondary);
+	border-radius: var(--border-radius-l);
+}
+
+.logo {
+	margin: 0 var(--margin-m);
+	/* margin-right: var(--margin-m); */
+}
+
+.languages {
+	display: inline-block;
+}
+
+.languages-btn {
+	border: none;
+	background-color: white;
+	font: inherit;
+	cursor: pointer;
+}
+
+.languages-options {
+	display: none;
+	position: absolute;
+}
+
+.languages-options a {
+	display: block;
+	color: black;
+	text-decoration: none;
+}
+
+.languages:hover .languages-options {
+	display: block;
+}
+
+.right-nav {
+	display: flex;
+}
+
+.intro {
+	display: flex;
+	justify-self: center;
+	justify-content: space-between;
+	align-items: center;
+	margin: var(--margin-xxl);
+	width: 75%;
+}
+
+.intro-left {
+	max-width: 45%;
+}
+
+.intro-text {
+	margin-top: var(--margin-m);
+}
+
+.learn-more {
+	display: inline-block;
+	text-decoration: none;
+	color: var(--color-primary);
+	border: var(--border-thick);
+	margin-top: var(--margin-xxl);
+	border-radius: var(--border-radius-l);
+	padding: var(--padding-s) var(--padding-m);
+}
+
+.intro img {
+	border-radius: var(--border-radius-m);
+	max-width: 50%;
+	height: 500px;
+}
+
+.about-shopper {
+	display: flex;
+	justify-self: center;
+	justify-content: space-between;
+	width: 75%;
+}
+
+.about-shopper__heading {
+	margin: var(--margin-m) 0;
+}
+
+.about-shopper__subheading {
+	letter-spacing: 0.2rem;
+}
+
+.about-shopper-rightside {
+	max-width: 50%;
+}
+
+.about-shopper__img {
+	max-width: 45%;
+	height: 400px;
+}
+
+/*------------------------------------*\
+  PRODUCTS
+\*------------------------------------*/
+.products-section {
+	margin: var(--margin-l) 0;
+	margin-top: var(--margin-xxxl);
+}
+
+.products-section__heading,
+.products-section__heading__subtext {
+	text-align: center;
+}
+
+.products-trio-container {
+	margin: var(--margin-xxl);
+	display: flex;
+	justify-content: space-between;
+}
+
+.products-card {
+	border: var(--border-thick);
+	border-radius: var(--border-radius-s);
+	width: 30%;
+	max-height: 50%;
+}
+
+.products-card__img {
+	width: 100%;
+	/* height: 40%; */
+}
+
+.product-text-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: var(--margin-m);
+}
+
+.products-card__description {
+	text-align: center;
+}
+
+.products-card__btn {
+	letter-spacing: 0.1rem;
+	padding: var(--padding-xs) var(--padding-m);
+	border: var(--border-thick);
+	border-radius: var(--border-radius-m);
+	text-decoration: none;
+	color: inherit;
+}
+
+/*------------------------------------*\
+  REVIEWS
+\*------------------------------------*/
+.reviews-heading {
+	text-align: center;
+	margin-top: var(--margin-xxxl);
+}
+
+.reviews {
+	margin-top: var(--margin-xxl);
+	display: flex;
+	justify-content: space-around;
+}
+
+.review {
+	width: 45%;
+	border: 1px solid black;
+}
+
+.review__img {
+	max-height: 400px;
+	width: 100%;
+}
+
+.review__description {
+	/* word-wrap: break-word;
+	overflow-wrap: break-word; */
+	max-width: 100%;
+}
+
+.reviews-previous,
+.reviews-next {
+	width: 30px;
+	height: 30px;
+	border: solid black 2px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+	cursor: pointer;
+}
+
+/*------------------------------------*\
+  FOOTER
+\*------------------------------------*/
+.footer-container {
+	width: 80%;
+	display: flex;
+	justify-self: center;
+	justify-content: center;
+}
+
+/* Email */
+.email-newsletter {
+	display: flex;
+	flex-direction: column;
+	/* justify-self: center; */
+	/* justify-content: center; */
+	/* width: 75%; */
+
+	margin-top: var(--margin-xxl);
+	padding: var(--padding-xl);
+	background-color: var(--color-accent);
+	border-bottom: var(--border-thick);
+}
+
+.email-newsletter__subtext {
+	font: var(--subtext);
+	opacity: 0.6;
+	margin-bottom: var(--margin-s);
+}
+
+.email-newsletter__input {
+	border-radius: var(--border-radius-s);
+	padding: var(--padding-xs);
+	width: 25%;
+}
+
+.email-newsletter__submit-btn {
+	width: 25%;
+	border-radius: var(--border-radius-s);
+	padding: var(--padding-xs);
+	letter-spacing: 0.1rem;
+	/* color: var(--color-secondary); */
+}
+
+/* Links & Copyright */
+.footer-links {
+	display: flex;
+	margin: var(--margin-m) 0;
+	gap: 1rem;
+	list-style: none;
+}
+
+.footer-links li a {
+	text-decoration: none;
+}
+
+.copyright {
+	border-top: var(--border-thick);
+	padding: var(--padding-s);
+	text-align: center;
+}
+
+
+/*------------------------------------*\
+  SNACK PAGE
+\*------------------------------------*/
+.snack-leftside
